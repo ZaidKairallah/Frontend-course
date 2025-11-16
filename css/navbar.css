@@ -1,0 +1,188 @@
+/* p{
+   
+    margin-bottom: 20px;
+}
+h1{
+    background-color: blue;
+border: 10px solid black;
+display: inline;
+padding: 1px;
+margin-left: 10%;
+margin-bottom: 39%;
+margin-right: 20%;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+#navbar{
+/* background-color: blue; */
+ background: linear-gradient(90deg, #1e3a8a, #3b82f6);/* تدرج لوني جميل بين الأزرق الغامق والفاتح */
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل خفيف أسفل الشريط لإضافة عمق */
+}
+ul{
+
+  list-style: none;/* إزالة النقاط من القائمة */
+
+  display: flex;  /*  العناصر جنب بعض */
+  gap: 80px;/* مسافة بين كل عنصر وآخر */
+  /* margin-left: 40%; */
+  margin-right: 40%;
+
+}
+a{color: white;
+    text-decoration:none;/* إزالة الخط السفلي من الروابط */
+    font-size: 9px;
+    transition: color 0.3s ease; /* حركة ناعمة لتغيير اللون عند التفاعل */
+}
+#navlogo {
+     border-radius: 50px;  /*جعل الصورة دائريه */
+     width: 80px;
+  height: 80px;
+  object-fit: cover;/* قص الصورة لتناسب الإطار */
+    margin-left: 20%;
+    transition: transform 0.3s ease; /* إعداد حركة ناعمة عند التكبير */
+}
+/*  تأثير عند تمرير الماوس على الصورة */
+/* #nav-logo:hover {
+  transform: scale(1.1);
+} */
+
+#navbtn{
+    background-color: white; /* لون الخلفية */
+  color: #1e3a8a; /* لون النص */
+  border: none; /* بدون إطار */
+  padding: 10px 25px; /* حجم الزر */
+  border-radius: 25px; /* زوايا دائرية */
+  font-size: 16px; /* حجم النص */
+  font-weight: 600; /* سمك الخط */
+  cursor: pointer; /* مؤشر اليد عند المرور */
+  transition: all 0.3s ease; /* حركة ناعمة */
+ margin-right: 5%; 
+}
+
+
+
+
+#footer{
+   background: linear-gradient(180deg, #2b2d42, #1a1c2c);
+/* width: 100%;  عشان تخلي الشريط على طول الصفحه */
+ width: 100%; 
+/* position: fixed; عشان يزبط البودي 
+bottom: 0%; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+  
+
+}
+#logo {
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+  border-radius: 25px;
+  object-fit: cover;/* قص الصورة لتناسب الإطار */
+padding: 10px;
+ 
+
+
+}
+/* align-items: center;
+هاي الخاصية ما بتشتغل إلا داخل عنصر display: flex.
+أما في #footer فهي ملهاش تأثير لأنها مش داخل Flex Container.
+✅ إذا بدك توسيط العناصر داخل الفوتر، لازم تضيف:
+
+css
+Copy code
+display: flex;
+flex-direction: column;
+align-items: center; */
+
+
+.ul{
+    list-style: none;/* إزالة النقاط من القائمة */
+
+  display: flex;  /* عرض العناصر بجانب بعض */
+  justify-content: flex-end;    
+
+  gap: 80px;/* مسافة بين كل عنصر وآخر */
+margin-left: 20%;
+padding-bottom: 20px;
+/* font-size: 400px; */
+
+
+}
+/* .liiii{
+font-size: xx-large;
+} */
+
+#p111{
+    color: #e5e7eb;
+   font-size: 25px;
+   text-align: end;
+   font-style:italic;
+margin-bottom: 0%;
+padding-left: 20px;
+font-size: 10px;
+
+}
+.mainGrid{
+ display: grid;
+ grid-template-columns: auto auto auto; 
+ margin: 30px;
+
+}
+.gridItem{
+  background-color: #1e3a8a;
+border: 3px solid red; 
+/* سوليد عشان يطلع غامق  */
+margin: 20 px;
+text-align: center;
+padding: 40px;
+border-radius: 10%;
+
+}
+.gridItem button{
+  font-size: 20px;
+  background-color: #1a1c2c;
+  color: aliceblue;
+  padding: 10px;
+  margin-top: 7px;
+  border-radius: 20px;
+}
+
+.gridItem button:hover{
+  background-color: azure;
+  color: black;
+
+}
+/* .mainGrid:hover{
+  width: 400px;
+
+} */
+.mainGrid{
+  border-radius: 30 px;
+}
+.imgGrade:hover{
+  width: 300px;
+
+}
+.imgGrade{
+  border-radius: 25px;
+ 
+}
+
